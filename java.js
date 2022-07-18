@@ -16,6 +16,10 @@ var scroll = 500;
 var scroll2 = 520;
 var fadein = document.getElementById('fade');
 var op0 = document.getElementById('op0');
+var left = document.getElementById('left');
+var up = document.getElementById('up');
+var right = document.getElementById('right');
+var tri = document.getElementById('tri');
 
 
 
@@ -38,6 +42,9 @@ window.onload = function(){
     start.classList.add('start');
    },4000);
    setTimeout(function(){
+      tri.classList.add('fade_in')
+   },5000);
+   setTimeout(function(){
     start.classList.remove('op0');
    },4000);
    setTimeout(function(){
@@ -55,17 +62,29 @@ window.onload = function(){
       button.classList.add('bt-zoom')
    },4000);
   setTimeout(function(){
-   wrapper.classList.add('bt-zoom')
+      wrapper.classList.add('bt-zoom')
   },4000);
   setTimeout(function(){
-   bt1.classList.add('bt-zoom1')
+      bt1.classList.add('bt-zoom1')
   },2000);
   setTimeout(function(){
-   bt2.classList.add('bt-zoom2')
+      bt2.classList.add('bt-zoom2')
   },2000);
   setTimeout(function(){
-   bt3.classList.add('bt-zoom3')
+      bt3.classList.add('bt-zoom3')
   },2000); 
+  setTimeout(function(){
+   left.classList.add('button-left')
+  },2000); 
+   setTimeout(function(){
+   up.classList.add('button-up')
+  },2000); 
+  setTimeout(function(){
+   right.classList.add('button-right')
+  },2000);
+  setTimeout(function(){
+   tri.classList.add('fade_in')
+  },5000);
   
 };
 
